@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:id="@+id/UserList"
+        android:text="UserList"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardimge"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="100dp"
+        android:elevation="10dp">
+        <ImageView
+            android:id="@+id/st_profile_img"
+            android:layout_width="150dp"
+            android:layout_height="145dp"
+            android:scaleType="fitXY"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_below="@+id/cardimge"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:id="@+id/et_name"
+        />
+    <EditText
+        android:layout_below="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter mobile no."
+        android:id="@+id/et_mobile"
+        />
+    <EditText
+        android:layout_below="@+id/et_mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter E-mail"
+        android:id="@+id/et_Email"
+        />
+    <EditText
+        android:layout_below="@+id/et_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter course name"
+        android:id="@+id/et_course_name"
+        />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:layout_margin="20dp"
+        android:text="Save"/>
+
+
+</RelativeLayout>
